@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Senbit</string>
+    <string name="background">Background</string>
+    <string name="logo">logo\n</string>
+    <string name="codedescription">codeDescription</string>
+    <string name="codecontent">codeContent</string>
+    <string name="codeowner">codeowner</string>
+    <string name="codetitle">codetitle</string>
+    <string name="language">Language</string>
+    <string name="upload">Upload</string>
+    <string name="code">Code</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string-array name="Languages">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Python</item>
+        <item>Swift</item>
+        <item>React</item>
+        <item>JavaScript</item>
+        <item>SQL</item>
+        <item>C#</item>
+        <item>Rust</item>
+        <item>PHP</item>
+        <item tools:ignore="TypographyEllipsis">other...</item>
+    </string-array>
+    <string-array name="domains">
+        <item>FRONTEND</item>
+        <item>BACKEND</item>
+        <item>FULL_STACK</item>
+        <item>DATA_SCIENCE</item>
+        <item>DEVOPS</item>
+        <item>MOBILE_APP</item>
+    </string-array>
+    <string name="intro">intro</string>
+    <string name="senbit">SENBIT</string>
+    <string name="logout_button">Logout Button</string>
+    <string name="logout">Logout</string>
+    <string name="logout_icon">Logout Icon</string>
+    <string-array name="experience">
+        <item>0-3</item>
+        <item>4-7</item>
+        <item>8-10</item>
+        <item>10+</item>
+    </string-array>
+</resources>

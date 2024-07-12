@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".EditActivity">
+
+        <ImageView
+            android:id="@+id/editActivityImage"
+            android:layout_width="239dp"
+            android:layout_height="161dp"
+            android:contentDescription="@string/intro"
+            app:layout_constraintBottom_toTopOf="@+id/editTextNewFirstName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.258"
+            app:srcCompat="@drawable/editactivity"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextNewFirstName"
+            android:layout_width="173dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="196dp"
+            android:hint="First name"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="Autofill,HardcodedText,MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextNewLastName"
+            android:layout_width="164dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="188dp"
+            android:hint="Last name"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.537"
+            app:layout_constraintStart_toEndOf="@+id/editTextNewFirstName"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="Autofill,HardcodedText,MissingConstraints" />
+
+        <EditText
+            android:id="@+id/introField"
+            android:layout_width="364dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:hint="Introduction"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNewLastName"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+
+        <Spinner
+            android:id="@+id/domainSpinner"
+            android:layout_width="364dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:entries="@array/domains"
+            android:spinnerMode="dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/introField"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <EditText
+            android:id="@+id/orgField"
+            android:layout_width="364dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:hint="Organization"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/domainSpinner"
+            tools:ignore="Autofill,HardcodedText,MissingConstraints,TextFields" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="364dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Languages"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orgField"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/langSpinner"
+            android:layout_width="340dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:entries="@array/Languages"
+            android:spinnerMode="dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="364dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="Experience (years)"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/langSpinner"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/expSpinner"
+            android:layout_width="353dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="36dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:entries="@array/experience"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.586"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/black"
+            android:text="Save"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expSpinner"
+            tools:ignore="HardcodedText,MissingConstraints,UnusedAttribute" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
